@@ -1,0 +1,65 @@
+---
+name: tasky_mobile_app
+description: A new Flutter project.
+publish_to: none
+version: 1.0.0+1
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+dependencies:
+  flutter:
+    sdk: flutter
+  sample_data:
+    git:
+      url: git://github.com/RegNex/sample_data.git
+  flutter_custom_dialog:
+    git:
+      url: git://github.com/794341379/flutter_custom_dialog.git
+  bot_toast: ^4.0.1
+  the_apple_sign_in: ^1.1.1
+  cupertino_icons: ^1.0.3
+  dotted_border: ^2.0.0+1
+  extended_image: ^5.1.0
+  firebase_analytics: ^8.3.2
+  firebase_auth: ^3.1.1
+  firebase_core: ^1.6.0
+  firebase_crashlytics: ^2.2.1
+  firebase_messaging: ^10.0.7
+  flutter_font_icons: ^2.2.3
+  flutter_image_stack: ^0.0.6
+  flutter_local_notifications: ^8.2.0
+  flutter_spinkit: ^5.1.0
+  flutter_svg: ^0.22.0
+  get_it: ^7.2.0
+  google_fonts: ^2.1.0
+  google_sign_in: ^5.1.1
+  groovin_widgets: ^3.0.2
+  hive: ^2.0.4
+  hive_flutter: ^1.1.0
+  http: ^0.13.3
+  image_cropper: ^1.4.1
+  image_picker: ^0.8.4+2
+  intl: ^0.17.0
+  logger: ^1.1.0
+  modal_bottom_sheet: ^2.0.0
+  strings: ^0.2.2
+  supercharged: ^2.1.1
+  textfield_tags: ^1.4.2
+  time_ago_provider: ^4.1.1
+  provider: ^6.0.1
+
+dependency_overrides:
+  path_provider: ^2.0.5
+  firebase_storage: ^10.0.3
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^1.0.4
+  flutter_launcher_icons: ^0.9.2
+flutter_icons:
+  android: launcher_icon
+  ios: true
+  image_path: assets/tasky_logo_bg.png
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
