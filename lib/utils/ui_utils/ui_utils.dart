@@ -1,5 +1,4 @@
 import 'dart:io';
-
 import 'package:bot_toast/bot_toast.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_custom_dialog/flutter_custom_dialog.dart';
@@ -7,7 +6,6 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:image_cropper/image_cropper.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:image_picker/image_picker.dart' as _image_picker;
-
 import 'custom_colors.dart';
 
 class UiUtilities {
@@ -75,7 +73,7 @@ class UiUtilities {
   }
 
   Future<File> getCroppedFile({String file}) async {
-    return await ImageCropper.cropImage(
+    return await ImageCropper().cropImage(
         sourcePath: file,
         compressFormat: ImageCompressFormat.png,
         compressQuality: 70,

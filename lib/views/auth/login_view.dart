@@ -1,7 +1,5 @@
 import 'dart:io';
-
 import 'package:bot_toast/bot_toast.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get_it/get_it.dart';
@@ -95,6 +93,7 @@ class LoginView extends StatelessWidget {
                     clickClose: false,
                     backButtonBehavior: BackButtonBehavior.ignore);
                 bool isSuccess = await _authManager.loginUserwithGoogle();
+
                 BotToast.closeAllLoading();
                 if (isSuccess) {
                   Data data = await _localStorage.getUserInfo();
